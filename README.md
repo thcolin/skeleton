@@ -53,9 +53,9 @@ Edit the `composer.json` :
 
 ## Install
 
-Just create a projet with composer :
+Just create a projet with composer (and remove the existing VCS) :
 
-`composer create-project thcolin/skeleton`
+`composer create-project thcolin/skeleton PROJECT dev-master`
 
 Next, updates dependencies, run :
 * `composer update`

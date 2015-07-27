@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+	
+	<head>
+	
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="public/assets/css/vendor.css">
+		<link rel="stylesheet" href="public/assets/css/app.css">
+		<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+		
+		<title>Skeleton!</title>
+	
+	</head>
+	
+	<body ng-app="SkeletonApp">
+	
+		<header ng-controller="MessageController">
+		
+			{% verbatim %}
+			
+			<div class="errors" ng-repeat="(index, message) in MessageService.messages">
+			
+				<div class="alert alert-block" ng-class="message.style">
+					
+					<i class="fa" ng-class="message.icon"></i>
+					{{ message.text }}
+					<a class="close" ng-click="clearMessage(index)"><i class="fa fa-times"></i></a>
+				
+				</div>
+				
+			</div>
+			
+			{% endverbatim %}
+		
+		</header>
+		
+		<div ng-controller="ExempleController">
+			
+			<section class="container">
+			
+				{% verbatim %}
+			
+				<header>
+				
+					<h1>Skeleton!</h1>
+					
+					<h3>{{ message }}</h3>
+				
+				</header>
+				
+				{% endverbatim %}
+			
+			</section>
+			
+		</div>
+		
+	</body>
+	
+	<script type="text/javascript" src="public/assets/js/vendor.js"></script>
+	<script type="text/javascript" src="public/assets/js/app.js"></script>
+	<script type="text/javascript" src="public/assets/js/angular.js"></script>
+	
+</html>

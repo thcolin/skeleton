@@ -1,0 +1,21 @@
+{
+    "name": "thcolin/skeleton",
+    "authors": [
+        {
+            "name": "thcolin",
+            "email": "th.colin3@gmail.com"
+        }
+    ],
+    "require": {
+	    "ext-curl": "*",
+        "silex/silex": "^1.3",
+        "twig/twig": "*",
+        "kumatch/silex-json-body-provider": "dev-master",
+        "jyggen/curl": "dev-master"
+    },
+	"autoload": {
+		"psr-4": {
+			"Skeleton\\": "src/"
+		}
+	}
+}
